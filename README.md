@@ -1,19 +1,18 @@
-# Introduction
-This is a project provided by Udacity and the goal of this project is to apply data modeling using Apache Cassandra in the startup called Sparkify which provides a streaming service like Spotify. 
+# Project: Data Modeling with Cassandra
 
-# Purpose of the project 
-Sparkify is a startup that provides a music streaming service similar to Spotify. Sparkify collects data from its users through log files. In order to provide valuable information to the analytic team, we created dimension and fact tables for a [star schema](https://en.wikipedia.org/wiki/Star_schema). A star schema is a methodology to develop databases which consists of one or more fact tables referencing any number of dimension tables.
+A startup called Sparkify wants to analyze the data they have been collecting on songs and user activity on their new music streaming app. The analysis team is particularly interested in understanding what songs users are listening to. Currently, there is no easy way to query the data to generate the results, since the data reside in a directory of CSV files on user activity on the app.
 
-With the PostgreSQL database, we will analyze the song that the users play in order to find insights. Then, we will implement a recommendation system in order to provide a better user experience, and with this keeping a high level of people that uses Sparkify daily. 
+They would like a data engineer to create an Apache Cassandra database which can create queries on song play data to answer the questions, and wish to bring you on the project. Your role is to create a database for this analysis. You will be able to test your database by running queries given to you by the analytics team from Sparkify to create the results.
+
+
+# Project Overview 
+
+In this project, you will apply what you have learned on data modeling with Apache Cassandra and complete an ETL pipeline using Python. To complete the project, you will need to model your data by creating tables in Apache Cassandra to run queries. You are provided with part of the ETL pipeline that transfers data from a set of CSV files within a directory to create a streamlined CSV file to model and insert data into Apache Cassandra tables. 
 
 
 # Files 
 The project has the following files: 
 
-* test.ipynb displays the first few rows of each table to let you check your database.
-* create_tables.py drops and creates your tables. You run this file to reset your tables before each time you run your ETL scripts.
-* etl.ipynb reads and processes a single file from song_data and log_data and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
-* etl.py reads and processes files from song_data and log_data and loads them into your tables. You can fill this out based on your work in the ETL notebook.
-* sql_queries.py contains all your sql queries, and is imported into the last three files above.
-* README.md provides discussion on your project.
+* 
+* README.md: provides discussion on your project.
 
